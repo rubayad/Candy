@@ -1,0 +1,265 @@
+html{scroll-behavior: smooth;}
+body{margin: 0px;}
+h1,h2,h3,h4,h5,h6{font-family: 'Poppins', sans-serif;}
+p,a,li,figcaption{
+  text-decoration: none;
+  font-family: 'Raleway',sans-serif;
+  font-size: 18px;
+}
+header{
+  background-color:azure;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+header div{
+  width: auto;
+  height: 90px;
+  flex-grow: 1;
+}
+header div a img{
+  width: auto;
+  height: 100%;
+}
+header nav menu{
+  list-style: none;
+  display: flex;
+  margin: 50px;
+}
+header nav menu li{
+  padding: 0px 20px;
+}
+header nav menu li a{
+  color: black;
+  font-weight: 900;
+  text-align: center;
+}
+header a:hover, header a:active, header a:focus, header:visited{
+  color: #e1341e;
+}
+.masthead{
+    height: 85vh;
+    width: auto;
+    /* create our  backgroud*/
+    background-image: url("../img/cover_p3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+ }
+ .masthead div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px;
+    background: rgb(71, 80, 79);
+    background: -webkit-linear-gradient(bottom right, rgba(57, 68, 67, 0.4), rgba(56, 68, 67, 0.7));
+    background: -moz-linear-gradient(bottom right, rgba(13,177,157, .4), rgba(49, 66, 64, 0.7));
+    background: linear-gradient(to top left, rgba(50, 63, 62, 0.4), rgba(49, 63, 61, 0.7));
+    justify-content: center;
+ }
+ .masthead div:nth-child(1) h1{
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 68px;
+  color: #f8f8f8;
+  text-shadow: 4px 2px 4px rgba(0,0,0,.5);
+  letter-spacing: 1.5px;    
+}
+.masthead div:nth-child(1) h3{
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 50px;
+  color: #f8f8f8;
+  text-shadow: 4px 2px 4px rgba(0,0,0,.5);
+  letter-spacing: 1.5px;    
+}
+.masthead div:nth-child(1) button{
+  background-color: rgba(177, 7, 7, 0.959);
+  border-radius: 10%;
+  border-style:double;
+  border-color: #e1341e;
+  padding: 12px 24px;
+
+}
+.masthead div:nth-child(1) button span{
+  font-size: 20px;
+  font-family: 'Agbalumo', 'san-serif';
+  font-weight: 900;
+}
+.masthead div:nth-child(1) button:hover{
+  background: rgba(70, 90, 202, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.masthead div:nth-child(1) button:hover rect{
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48; /* defines an offset of the rendering of the associated dash array*/
+}
+.masthead div:nth-child(1) p{
+  color: #f8f8f8;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 900;
+}
+.know{
+  display: flex;
+  padding: 5%;
+  align-items: center;
+}
+
+.knowImg{
+  padding: 3%;
+}
+.knowImg img{
+  height: 70vh;
+  width: 35vw;
+}
+.knowTxt{
+  padding: 3%;
+  background-color:rgba(235, 143, 143, 0.918);
+  border-radius: 10%;
+  border-style:groove;
+  border-color: #000000;
+}
+.knowTxt h3{
+  font-family: 'Agbalumo', sans-serif;
+  font-size: 35px;
+  text-align:left;
+  color: rgb(58, 3, 3);
+  
+}
+.knowTxt p{
+  text-align:center;
+  color: rgb(58, 3, 3);
+  font-style: italic;
+  font-weight: 100;
+  
+}
+.knowTxt .readMoreBtn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: rgb(97, 35, 10); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.knowTxt .readMoreBtn svg {
+  margin-right: 8px; /* Adjust the margin between the icon and text */
+}
+
+#drop-shadow{
+  padding: 5% 10%;
+  text-align: center;
+}
+#drop-shadow h3{
+  font-style: italic;
+  font-size: 50px;
+  font-family: 'Dancing Script', sans-serif;
+  font-weight:900;
+}
+
+.ds-example-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ds-container img{
+  width: 120%;
+  filter: drop-shadow(15px 10px 4px #0e0e0e);
+  transition: all .25s linear;
+}
+.ds-container img:hover{
+  filter: drop-shadow(0px 0px 0px #0e0e0e);
+}
+.cp-container-1 img{
+  width: 90%;
+  height: auto;
+  margin-left: 30%;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.cp-container-2 img{
+  width: 100%;
+  clip-path: circle(34%);
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+}
+
+/*  Style for the form container */
+.footer {
+  padding: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for the "Our Story" section */
+.About {
+  max-width: 40%; /* Use a percentage for flexibility */
+  margin: 0 auto; /* Center the element horizontally */
+}
+.About h3{
+  font-family: 'Agbalumo', sans-serif;
+  font-size: 30px;
+}
+.About p{
+  font-size: 15px;
+  font-style: italic;
+}
+
+/*  Style for the entire footer */
+.footer {
+  background-color: #500a0a;
+  color: white;
+  padding: 20px;
+}
+
+/* Adjust styling for links in the footer */
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*  Adjust styling for the footer menu */
+.footer menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.footer menu li {
+  margin-right: 20px;
+}
+.footerImg{
+  width: 20%;
+}
+.footerImg img {
+  width: 50%; /* Set the width of the image to 50% of its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
